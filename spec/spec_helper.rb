@@ -1,6 +1,6 @@
 require 'rspec'
 
-require '.application'
+require './person'
 
 RSpec.configure do |config|
 	config.color =true

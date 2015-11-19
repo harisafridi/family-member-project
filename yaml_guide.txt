@@ -1,0 +1,30 @@
+
+f = File.write("./spec/test_data/phonebook.yaml")
+
+data["people"].first //
+
+person=Person.new(data["people"][0]["fname"], data["people"][0]["surname"]
+person=Person.new(yaml_person["fname"], yaml_person["surname"]
+people_array =data["people"]
+
+
+people_array.each do |person|
+	person = Person.new(person["fname']
+
+
+
+
+def load (filename)
+
+data = YAML.load(File.open(filnemae))
+
+data['people'].each do |yaml_person|
+person = Person.new(yam['fname],yaml["surname"], yaml["dob"])
+
+yaml["emails"].each { |e| person.add_email(e) }
+yaml["phones"].each { |e| person.add_email(e) }
+
+@enteries << person
+
+end
+end

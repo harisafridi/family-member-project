@@ -27,4 +27,14 @@ class Person
     	"Joe Bloggs was born on #{dob}.\n\ Their email addresses are: #{emailarray}.\n\ 
     	Their phone numbers are #{phonearray}"
     end
+    def print_details
+    
+    puts "\nDate of Birth: " + dob.strftime('%m %B %Y')+"\n"
+    puts "Email Addresses: "
+    emailarray.each do |address| puts "- " + address.to_s + "\n"
+        end
+    puts "\nPhone Numbers: "
+    phonearray.each do |number| puts "- " + number.to_s + "\n"
+        end
+    end
 end

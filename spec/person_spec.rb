@@ -23,7 +23,6 @@ describe "Person Class - enteries in phonebook" do
 			person.remove_phone(0)
 			expect(person.phonearray).to eq (["239423480424"])
 	end
-
 	it "should add or delete email and phone details" do
 		person = Person.new("joe", "bloggs", "1 Jan 1990")
 			person.add_phone "239423480424"
@@ -35,6 +34,7 @@ describe "Person Class - enteries in phonebook" do
 		  person.add_phone "02012345678"
 		  person.add_email "joe@foo.com"
 		  person.add_email "joe.bloggs@work.com"
-			expect(person.print_details).to include("02012345678", "joe@foo.com", "joe.bloggs@work.com","01 January 1990")
- end
+			expect(person.print_details).to include("01 January 1990","joe@foo.com","joe.bloggs@work.com","02012345678")
+ 	end
+ 	
 end

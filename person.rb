@@ -8,10 +8,10 @@ class Person
 		@emailarray = []
 		@phonearray = []
 	end
-	def full_name	
-	 "#{first_name} #{last_name}"
-	end
-	def add_email(emailarray)
+  	def full_name	
+  	 "#{first_name} #{last_name}"
+  	end
+  	def add_email(emailarray)
     @emailarray << emailarray
    	end
    	def remove_email(index_position)

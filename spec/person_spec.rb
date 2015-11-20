@@ -36,5 +36,5 @@ describe "Person Class - enteries in phonebook" do
 		  person.add_email "joe.bloggs@work.com"
 			expect(person.print_details).to include("01 January 1990","joe@foo.com","joe.bloggs@work.com","02012345678")
  	end
- 	
+ 	it "should check "
 end
